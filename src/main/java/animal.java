@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 
-public class main {
+public class animal {
     public static void main(String[] args) {
 
         dog dog = new dog("John");
