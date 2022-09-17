@@ -1,8 +1,7 @@
-import java.lang.reflect.Array;
 import java.util.Scanner;
 
 
-public class animal {
+public class main {
     public static void main(String[] args) {
 
         dog dog = new dog("John");
@@ -30,17 +29,17 @@ public class animal {
         scanner1.nextLine();
 
         System.out.print("What are your pets names? ");
-        scanner1.nextLine();
-        scanner1.nextLine();
-        scanner1.nextLine();
+        String name = scanner1.nextLine();
+       String name2 = scanner1.nextLine();
+       String name3 = scanner1.nextLine();
 
         dog.speak();
         cat.speak();
         cow.speak();
 
-        System.out.println("hi" + " " + dog.getName());
-        System.out.println("hi" + " "+ cat.getName());
-        System.out.println("hi" + " " + cow.getName());
+        System.out.println("hi" + " " + name);
+        System.out.println("hi" + " "+ name2);
+        System.out.println("hi" + " " + name3);
 
 
 
