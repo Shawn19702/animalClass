@@ -1,51 +1,52 @@
 import java.util.Scanner;
 
 
-public class animal {
+public class Main {
     public static void main(String[] args) {
 
-        dog dog = new dog("John");
-        cat cat = new cat("Bob");
-        cow cow = new cow("Richard");
-
-        dog.setName("Bear");
-        cat.setName("Simba");
-        cow.setName("Buttercup");
 
 
 
 
 
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("How many pets do you have?:");
+         int length = scanner.nextInt();
 
-        Scanner scanner1 = new Scanner(System.in);
+        Pet[] Pets = new Pet[length];
 
-        System.out.print("How many pets do you have? ");
 
-        scanner1.nextLine();
+        for(int i = 0; i < Pets.length; i++){
+            System.out.println("What kind of pet is pet" + " " +(i +1));
+          String typeOfpet;
+            typeOfpet = scanner.next();
+            if (typeOfpet.equalsIgnoreCase("cat")){
+                Pets[i] = new Cat();
+            }else if (typeOfpet.equalsIgnoreCase("dog")){
+                Pets[i]=new Dog();
+            }else if (typeOfpet.equalsIgnoreCase("cow")){
+                Pets[i] = new Cow();
+            }
+        }
 
-        System.out.print("What kind of pets do you have? ");
-        scanner1.nextLine();
-        scanner1.nextLine();
-        scanner1.nextLine();
 
-        System.out.print("What are your pets names? ");
-        String name = scanner1.nextLine();
-       String name2 = scanner1.nextLine();
-       String name3 = scanner1.nextLine();
 
-        dog.speak();
-        cat.speak();
-        cow.speak();
-
-        System.out.println("hi" + " " + name);
-        System.out.println("hi" + " "+ name2);
-        System.out.println("hi" + " " + name3);
+        for(int i = 0; i < Pets.length; i++){
+            System.out.println(Pets[i].getName());
+            Pets[i].speak();
+        }
 
 
 
 
 
 
+        }
 
-    }
-}
+
+
+
+
+
+
+            }
