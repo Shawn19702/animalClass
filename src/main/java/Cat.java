@@ -1,6 +1,6 @@
-public class cat extends pet{
-    cat(String name) {
-        super(name);
+public class Cat extends Pet {
+    Cat() {
+        
     }
 
     @Override
@@ -9,5 +9,6 @@ public class cat extends pet{
         System.out.println("Meow Meow");
     }
 }
+
 
 
