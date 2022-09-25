@@ -1,6 +1,6 @@
-public class dog extends pet {
-    dog(String name) {
-        super(name);
+public class Dog extends Pet {
+    Dog() {
+
     }
 
     @Override
